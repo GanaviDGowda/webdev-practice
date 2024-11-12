@@ -1,0 +1,336 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+header{
+    background-color: rgba(114, 4, 85, 0.644);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    
+}   
+
+#mode{
+    background-color: #030637;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: none;
+}
+
+body {
+    background-image: url('5073414.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.container {
+    
+    width: 100vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 2px;
+    
+}
+
+.subcontainer {
+    background-color: rgba(91, 110, 110, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#Submit {
+    background-color: green;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#Submit:hover {
+    background-color: darkgreen;
+}
+
+p, h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2; 
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: rgba(51, 7, 38, 0.7);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(183, 183, 183, 0.5);
+    border-top: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+tr:hover td {
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px;
+    }
+}
+
+.light-mode{
+    background-image:url('light.jpg');
+    color: black;
+}
+#delete, #plus{
+    width: 20px;
+    height: 20px;
+}
+#list{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+#add{
+    display: flex;
+    justify-content: right;
+    
+}
+#add button{
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+}
+.addedList{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    list-style-type: none;
+}
+.liContainer{
+    width: 80%;
+    margin: 5px;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: rgb(223, 242, 235);
+}
+
+.liContainer button{
+    background-image:url("delete.png");
+    background-size: contain;
+    align-items: center;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border:none
+}
+
+.to-do{
+    width: 80%;
+}
+.to-do .subcontainer{
+    width: 80%;
+}
+
+.listContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    overflow: auto; 
+}
+.SubliContainer{
+    padding-left: 20PX;
+    display: inline;
+}
+.liContainer input[type="radio"] {
+    width: 15px;          /* Set the width to a smaller value */
+    height: 15px;         /* Set the height to a smaller value */
+    margin: 0;            /* Remove any margin (default browser styling) */
+    padding: 0;           /* Remove any padding */
+    cursor: pointer;     /* Change the cursor to pointer for interactivity */
+    transform: scale(0.8); /* Scale down the radio button slightly */
+}
+.shift_container{
+    height: 400px;
+    display:block;
+}
+.shifting-panel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    z-index: 0;
+}
+.shifting-panel p{
+    padding: 10px;
+}
+.layer1,.layer2,.layer3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px  #28283d;
+                
+    background-color: rgb(54, 69, 79) ;
+}
+
+.layer1 img,
+.layer2 img,
+.layer3 img {
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.layer1{
+    top:100px;
+    left:200px;
+}
+.layer2{
+    top:150px;
+    left:250px;  
+}
+.layer3{
+    top:200px;
+    left:300px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 2px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gallery img {
+    height: 30vh;
+    width: 30vh;
+    object-fit: cover;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.gallery .subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fullmode {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullmode img {
+    max-width: 90vh;
+    max-height: 90vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.photo {
+    margin: 10px;
+}
